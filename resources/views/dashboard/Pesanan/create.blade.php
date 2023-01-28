@@ -121,8 +121,6 @@
                 </li>
                 @endforeach
         </div>
-
-            <p>{{ $total }}</p>
             <input type="text" id="adminrm_id" name="adminrm_id" value="{{ $rm }}" class="hidden">
             <input type="text" id="meja_id" name="meja_id" value="{{ $meja }}" class="hidden">
             <input type="text" id="totalharga" name="totalharga" value="{{ $total }}" class="hidden">

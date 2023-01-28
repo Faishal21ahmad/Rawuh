@@ -13,32 +13,35 @@ class MejaRMController extends Controller
         return view('dashboard.meja.index', [
             'title' => 'List Meja',
             'header' => 'Daftar Meja',
-            'meja' => MejaRM::where('adminrm_id', auth()->user()->id)->orderBy('no', 'ASC')->get()
+            'meja' => MejaRM::where('adminrm_id', auth()->user()->id)->orderBy('adminrm_id', 'ASC')->get()
         ]);
     }
 
     public function create()
     {
-        //$meja = MejaRM::where('adminrm_id', auth()->user()->id)->latest('no');
+        $akhir = MejaRM::where('adminrm_id', auth()->user()->id)->latest()->first();
 
         return view('dashboard.meja.create', [
             'title' => 'input meja',
             'header' => 'input meja',
-            'meja' => MejaRM::where('adminrm_id', auth()->user()->id)->latest('no')->first()
+            'meja' => $akhir
         ]);
     }
 
     public function store(Request $request)
     {
-        $meja1 = MejaRM::where('adminrm_id', auth()->user()->id)->latest('no')->first();
         $meja2 = MejaRM::where('adminrm_id', auth()->user()->id)->get();
-        $mejaakhir = $meja1->no + 1;
+        $mejaakhir = $request->no;
         $validatedData['no'] = $mejaakhir;
-
         $validatedData = $request->validate([
             'no' => 'required',
-            'pesan' => 'required|max:255'
+            'pesan' => 'required|max:255',
+            'qr' => 'image|file|max:1024'
         ]);
+
+        if ($request->file('qr')) {
+            $validatedData['qr'] = $request->file('qr')->store('qr-img');
+        }
 
         $dtin = $validatedData['no'];
 
@@ -50,12 +53,8 @@ class MejaRMController extends Controller
         };
 
         $validatedData['adminrm_id'] = auth()->user()->id;
-        $validatedData['qr'] = 'qr-code.png';
-        $validatedData['link'] = 'https://www.youtube.com/watch?v=G1IbRujko-A&t=443s';
-
-        // dd($validatedData);
+        $validatedData['link'] = 'http://127.0.0.1:8000/pesan/' . $mejaakhir . '/' . auth()->user()->id;
         MejaRM::create($validatedData);
-
         return redirect('/meja');
     }
 
@@ -94,7 +93,7 @@ class MejaRMController extends Controller
         return redirect('/meja')->with('success', 'Post Has ben Update!!');
     }
 
-  
+
     public function destroy(MejaRM $meja)
     {
 
@@ -109,7 +108,7 @@ class MejaRMController extends Controller
 
     public function download(MejaRM $meja)
     {
-       
+
         $nama = $meja->link;
         $pathToFile = URL() . 'https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=' . $meja->link;
         $headers = array(

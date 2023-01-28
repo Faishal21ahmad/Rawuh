@@ -87,7 +87,7 @@ class CartController extends Controller
 
     public function success()
     {
-        session()->flush();
+        session()->flush('cart');
         return view('pesanan.selesai');
     }
 }
