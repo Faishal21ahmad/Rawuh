@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 27, 2023 at 08:44 AM
+-- Generation Time: Jan 28, 2023 at 01:33 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -44,9 +44,9 @@ CREATE TABLE `adminrms` (
 --
 
 INSERT INTO `adminrms` (`id`, `namarm`, `owner`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Rawuh Warmindo', 'Faishal', 'rawuh@gmail.com', '2023-01-26 20:41:37', '$2y$10$sRf6BDt89iKcNCoChXcxB.VP6p0zbyZLhYs9HD2qfsO2YRmiaPNYq', 'dBelu63y2a', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(2, 'Rawuh Mewah', 'Ahmad', 'ahmad@gmail.com', '2023-01-26 20:41:37', '$2y$10$hFKfYxkF16tCdp/YtUYtrulCij8VHwhVrvpwxN3iDVNbsYILjHz.C', 'kmWFHUSaSk', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(3, 'Burjo Mewah', 'Pak burjo', 'burjo@gmail.com', '2023-01-26 20:41:37', '$2y$10$n5yElnfzuZ5AWRRIy1sneulDsWqRBjcYsBdiljq2ovfKYimjfIwoO', 'gELKB6134A', '2023-01-26 20:41:37', '2023-01-26 20:41:37');
+(1, 'Rawuh Warmindo', 'Faishal', 'rawuh@gmail.com', '2023-01-27 17:26:45', '$2y$10$T.dMOsbnFZcf/QgDz9JjOO7vzLQD6ddP5TbtCGplqnD2PM8v07nES', 'jBlzsUH6Fo', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(2, 'Rawuh Mewah', 'Ahmad', 'ahmad@gmail.com', '2023-01-27 17:26:46', '$2y$10$PXuBnNxsHii4JhuY5Ls5LuS601HsXBcyX76AHYx42E7r/YIETtGru', '1VmvmXcsn6', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(3, 'Burjo Mewah', 'Pak burjo', 'burjo@gmail.com', '2023-01-27 17:26:46', '$2y$10$uaAcrpqUYo.3i/APp0g2qOFb/CDAp8unJl2Y818gIcrEaiAmOa8Nq', 'ADHaUsmppK', '2023-01-27 17:26:46', '2023-01-27 17:26:46');
 
 -- --------------------------------------------------------
 
@@ -70,24 +70,22 @@ CREATE TABLE `detail_pesanans` (
 --
 
 INSERT INTO `detail_pesanans` (`id`, `pesanan_id`, `menu_id`, `codepesan`, `jumlah`, `subharga`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, 'qwe123', '1', '18000', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(2, 1, 4, 'qwe123', '1', '4000', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(3, 2, 7, '321ewq', '1', '15000', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(4, 2, 8, '321ewq', '1', '4000', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(5, 3, 5, '4324', '1', '18000', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(6, 3, 6, '4324', '1', '10000', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(7, 3, 7, '4324', '1', '15000', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(8, 3, 8, '4324', '1', '4000', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(9, 4, 7, '432ter', '1', '15000', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(10, 4, 8, '432ter', '1', '4000', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(11, 5, 7, 'qwewer', '1', '15000', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(12, 5, 8, 'qwewer', '1', '4000', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(13, 6, 5, 'dfgdfg', '1', '18000', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(14, 6, 6, 'dfgdfg', '1', '10000', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(15, 6, 7, 'dfgdfg', '1', '15000', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(16, 6, 8, 'dfgdfg', '1', '4000', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(17, NULL, 5, '5VZWyW1pFo', '3', '54000', '2023-01-26 21:06:57', '2023-01-26 21:06:57'),
-(18, NULL, 6, '5VZWyW1pFo', '3', '30000', '2023-01-26 21:06:57', '2023-01-26 21:06:57');
+(1, 1, 1, 'qwe123', '1', '18000', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(2, 1, 4, 'qwe123', '1', '4000', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(3, 2, 7, '321ewq', '1', '15000', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(4, 2, 8, '321ewq', '1', '4000', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(5, 3, 5, '4324', '1', '18000', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(6, 3, 6, '4324', '1', '10000', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(7, 3, 7, '4324', '1', '15000', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(8, 3, 8, '4324', '1', '4000', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(9, 4, 7, '432ter', '1', '15000', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(10, 4, 8, '432ter', '1', '4000', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(11, 5, 7, 'qwewer', '1', '15000', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(12, 5, 8, 'qwewer', '1', '4000', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(13, 6, 5, 'dfgdfg', '1', '18000', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(14, 6, 6, 'dfgdfg', '1', '10000', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(15, 6, 7, 'dfgdfg', '1', '15000', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(16, 6, 8, 'dfgdfg', '1', '4000', '2023-01-27 17:26:46', '2023-01-27 17:26:46');
 
 -- --------------------------------------------------------
 
@@ -109,15 +107,15 @@ CREATE TABLE `kategoris` (
 --
 
 INSERT INTO `kategoris` (`id`, `adminrm_id`, `namakategori`, `published_at`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Makanan', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(2, 1, 'Minuman', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(3, 1, 'Lalapan', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(4, 2, 'Makanan', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(5, 2, 'Minuman', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(6, 2, 'Lalapan', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(7, 3, 'Makanan', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(8, 3, 'Minuman', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(9, 3, 'Lalapan', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37');
+(1, 1, 'Makanan', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(2, 1, 'Minuman', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(3, 1, 'Lalapan', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(4, 2, 'Makanan', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(5, 2, 'Minuman', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(6, 2, 'Lalapan', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(7, 3, 'Makanan', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(8, 3, 'Minuman', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(9, 3, 'Lalapan', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46');
 
 -- --------------------------------------------------------
 
@@ -142,33 +140,33 @@ CREATE TABLE `meja_r_m_s` (
 --
 
 INSERT INTO `meja_r_m_s` (`id`, `adminrm_id`, `no`, `pesan`, `link`, `qr`, `published_at`, `created_at`, `updated_at`) VALUES
-(1, 1, '1', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/1/1', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(2, 1, '2', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/2/1', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(3, 1, '3', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/3/1', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(4, 1, '4', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/4/1', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(5, 1, '5', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/5/1', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(6, 1, '6', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/6/1', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(7, 1, '7', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/7/1', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(8, 1, '8', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/8/1', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(9, 1, '9', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/9/1', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(10, 2, '1', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/1/2', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(11, 2, '2', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/2/2', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(12, 2, '3', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/3/2', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(13, 2, '4', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/4/2', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(14, 2, '5', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/5/2', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(15, 2, '6', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/6/2', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(16, 2, '7', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/7/2', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(17, 2, '8', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/8/2', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(18, 2, '9', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/9/2', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(19, 3, '1', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/1/3', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(20, 3, '2', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/2/3', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(21, 3, '3', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/3/3', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(22, 3, '4', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/4/3', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(23, 3, '5', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/5/3', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(24, 3, '6', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/6/3', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(25, 3, '7', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/7/3', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(26, 3, '8', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/8/3', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(27, 3, '9', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/9/3', 'qr-code.png', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37');
+(1, 1, '1', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/1/1', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(2, 1, '2', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/2/1', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(3, 1, '3', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/3/1', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(4, 1, '4', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/4/1', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(5, 1, '5', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/5/1', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(6, 1, '6', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/6/1', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(7, 1, '7', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/7/1', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(8, 1, '8', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/8/1', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(9, 1, '9', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/9/1', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(10, 2, '1', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/1/2', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(11, 2, '2', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/2/2', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(12, 2, '3', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/3/2', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(13, 2, '4', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/4/2', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(14, 2, '5', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/5/2', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(15, 2, '6', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/6/2', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(16, 2, '7', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/7/2', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(17, 2, '8', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/8/2', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(18, 2, '9', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/9/2', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(19, 3, '1', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/1/3', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(20, 3, '2', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/2/3', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(21, 3, '3', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/3/3', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(22, 3, '4', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/4/3', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(23, 3, '5', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/5/3', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(24, 3, '6', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/6/3', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(25, 3, '7', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/7/3', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(26, 3, '8', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/8/3', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(27, 3, '9', 'Scan Untuk Memesan', 'http://127.0.0.1:8000/pesan/9/3', 'qr-code.png', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46');
 
 -- --------------------------------------------------------
 
@@ -195,18 +193,18 @@ CREATE TABLE `menu_r_m_s` (
 --
 
 INSERT INTO `menu_r_m_s` (`id`, `adminrm_id`, `kategori_id`, `menu`, `desmenu`, `harga`, `img`, `status`, `published_at`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, 'Mie Ayam Bakso', 'Mie ayam Bakso, Dengan rasa yang kuat dan pas', '18000', 'menu-img/mie ayam bakso.png', 'tersedia', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(2, 1, 1, 'Mie Ayam', 'Mie ayam, Dengan rasa yang kuat dan pas, terenak sejagat Wonogiri', '10000', 'menu-img/mie ayam1.jpg', 'tersedia', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(3, 1, 1, 'Bakso', 'Bakso, Dengan rasa yang kuat dan pas, terenak sejagat Wonogiri', '15000', 'menu-img/bakso.jpeg', 'taktersedia', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(4, 1, 2, 'Teh Kuli', 'Teh pilihanx dengan porsi kuli', '4000', 'menu-img/teh kuli.jpg', 'taktersedia', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(5, 2, 4, 'Sate', 'Sate dengan daging pilihan dan posrsi pas', '18000', 'menu-img/sate.jpg', 'tersedia', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(6, 2, 4, 'Soto Ayam', 'Soto ter lezzat', '10000', 'menu-img/sotoayam.jpg', 'tersedia', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(7, 2, 4, 'Sop Iga', 'Sop Iga dengan gaging tulang yang pas', '15000', 'menu-img/sop iga.jpg', 'tersedia', NULL, '2023-01-26 20:41:37', '2023-01-26 23:03:39'),
-(8, 2, 5, 'Wedang Jahe', 'Wedang Jahe dengan jahe dataran tinggi terbaik', '4000', 'menu-img/wedang jahe.jpg', 'tersedia', NULL, '2023-01-26 20:41:37', '2023-01-26 23:03:47'),
-(9, 3, 7, 'Nasi Goreng Spesial', 'Nasi Goreng Spesial Paling enak', '12000', 'menu-img/nasi goreng spesial.jpg', 'tersedia', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(10, 3, 7, 'Nasi Uduj', 'Nasi Uduk dengan lauk lengkap', '10000', 'menu-img/nasi uduk.jpg', 'tersedia', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(11, 3, 7, 'Nasi Liwet', 'Nasi Liwet enak jos gandos', '13000', 'menu-img/nasi liwet.jpg', 'taktersedia', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(12, 3, 8, 'Susu', 'Susu Segar', '5000', 'menu-img/susu.png', 'taktersedia', NULL, '2023-01-26 20:41:37', '2023-01-26 20:41:37');
+(1, 1, 1, 'Mie Ayam Bakso', 'Mie ayam Bakso, Dengan rasa yang kuat dan pas', '18000', 'menu-img/mie ayam bakso.png', 'tersedia', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(2, 1, 1, 'Mie Ayam', 'Mie ayam, Dengan rasa yang kuat dan pas, terenak sejagat Wonogiri', '10000', 'menu-img/mie ayam1.jpg', 'tersedia', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(3, 1, 1, 'Bakso', 'Bakso, Dengan rasa yang kuat dan pas, terenak sejagat Wonogiri', '15000', 'menu-img/bakso.jpeg', 'taktersedia', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(4, 1, 2, 'Teh Kuli', 'Teh pilihanx dengan porsi kuli', '4000', 'menu-img/teh kuli.jpg', 'taktersedia', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(5, 2, 4, 'Sate', 'Sate dengan daging pilihan dan posrsi pas', '18000', 'menu-img/sate.jpg', 'tersedia', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(6, 2, 4, 'Soto Ayam', 'Soto ter lezzat', '10000', 'menu-img/sotoayam.jpg', 'tersedia', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(7, 2, 4, 'Sop Iga', 'Sop Iga dengan gaging tulang yang pas', '15000', 'menu-img/sop iga.jpg', 'tersedia', NULL, '2023-01-27 17:26:46', '2023-01-27 17:29:45'),
+(8, 2, 5, 'Wedang Jahe', 'Wedang Jahe dengan jahe dataran tinggi terbaik', '4000', 'menu-img/wedang jahe.jpg', 'taktersedia', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(9, 3, 7, 'Nasi Goreng Spesial', 'Nasi Goreng Spesial Paling enak', '12000', 'menu-img/nasi goreng spesial.jpg', 'tersedia', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(10, 3, 7, 'Nasi Uduj', 'Nasi Uduk dengan lauk lengkap', '10000', 'menu-img/nasi uduk.jpg', 'tersedia', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(11, 3, 7, 'Nasi Liwet', 'Nasi Liwet enak jos gandos', '13000', 'menu-img/nasi liwet.jpg', 'taktersedia', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(12, 3, 8, 'Susu', 'Susu Segar', '5000', 'menu-img/susu.png', 'taktersedia', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46');
 
 -- --------------------------------------------------------
 
@@ -268,12 +266,12 @@ CREATE TABLE `pembayarans` (
 --
 
 INSERT INTO `pembayarans` (`id`, `adminrm_id`, `namapembayaran`, `qrpembayaran`, `created_at`, `updated_at`) VALUES
-(1, 1, 'cash', '', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(2, 1, 'Qris', 'pay-img/qrShopee.jpg', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(3, 2, 'cash', '', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(4, 2, 'Qris', 'pay-img/qrShopee.jpg', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(5, 3, 'cash', '', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(6, 3, 'Qris', 'pay-img/qrShopee.jpg', '2023-01-26 20:41:37', '2023-01-26 20:41:37');
+(1, 1, 'cash', '', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(2, 1, 'Qris', 'pay-img/qrShopee.jpg', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(3, 2, 'cash', '', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(4, 2, 'Qris', 'pay-img/qrShopee.jpg', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(5, 3, 'cash', '', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(6, 3, 'Qris', 'pay-img/qrShopee.jpg', '2023-01-27 17:26:46', '2023-01-27 17:26:46');
 
 -- --------------------------------------------------------
 
@@ -318,13 +316,12 @@ CREATE TABLE `pesanans` (
 --
 
 INSERT INTO `pesanans` (`id`, `adminrm_id`, `meja_id`, `jenispembayaran_id`, `codepesan`, `namapemesan`, `totalharga`, `statuspesanan`, `created_at`, `updated_at`) VALUES
-(1, 1, 2, 1, 'qwe123', 'Joko', '22000', 'diterima', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(2, 2, 10, 1, '321ewq', 'Milla', '19000', 'selesai', '2023-01-26 20:41:37', '2023-01-26 23:54:59'),
-(3, 2, 11, 1, '4324', 'Nisa', '47000', 'diterima', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(4, 2, 12, 1, '432ter', 'Fikri', '19000', 'diterima', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(5, 2, 13, 1, 'qwewer', 'Fathuni', '19000', 'diproses', '2023-01-26 20:41:37', '2023-01-26 23:55:08'),
-(6, 2, 14, 1, 'dfgdfg', 'Jokos', '47000', 'diterima', '2023-01-26 20:41:37', '2023-01-26 20:41:37'),
-(7, 2, 1, 3, '5VZWyW1pFo', 'hika', '84000', 'diterima', '2023-01-26 21:06:57', '2023-01-26 21:06:57');
+(1, 1, 2, 1, 'qwe123', 'Joko', '22000', 'diterima', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(2, 2, 10, 1, '321ewq', 'Milla', '19000', 'diterima', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(3, 2, 11, 1, '4324', 'Nisa', '47000', 'diterima', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(4, 2, 12, 1, '432ter', 'Fikri', '19000', 'diterima', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(5, 2, 13, 1, 'qwewer', 'Fathuni', '19000', 'diterima', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(6, 2, 14, 1, 'dfgdfg', 'Jokos', '47000', 'diterima', '2023-01-27 17:26:46', '2023-01-27 17:26:46');
 
 -- --------------------------------------------------------
 
@@ -431,7 +428,7 @@ ALTER TABLE `adminrms`
 -- AUTO_INCREMENT for table `detail_pesanans`
 --
 ALTER TABLE `detail_pesanans`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `kategoris`
@@ -473,7 +470,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `pesanans`
 --
 ALTER TABLE `pesanans`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `users`
